@@ -1,7 +1,5 @@
 <?php
-include("http://localhost/SystemSage/Model/database.php");
-
-echo "DDDDd";
+include('../Model/database.php');
 
 $previousBirthYear=$previousDeathYear=$previousBirth=$previousDeath="";
 
@@ -31,7 +29,7 @@ while($row = $userQuery->fetch_assoc())
 
 if($userQuery==TRUE && $userQuery1==TRUE)
 {
-    $message="Sucessfully Inserted";
+    echo "Sucessfully Inserted";
 }
 $connection->CloseCon($conobj);
 
